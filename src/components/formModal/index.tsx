@@ -5,7 +5,7 @@ interface Props {
   modalClose: () => void
 }
 
-export const FormModal: React.FC<Props> = ({
+export const FormModal: React.FC<Props> = React.memo(({
   modalClose,
 }: Props) => {
 
@@ -22,4 +22,4 @@ export const FormModal: React.FC<Props> = ({
       />
     </div>
   );
-};
+});
