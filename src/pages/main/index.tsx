@@ -10,10 +10,10 @@ export const Main: React.FC<Props> = ({ handleClick }: Props) => {
 
   const [count, setCount] = useState<number>(0)
 
-  const GuideText = useMemo(() => {
+  const GuideText = () => {
     console.log("GuideText");
     return "詳しくはこちらをご確認ください"
-  },[]);
+  };
 
   const ChangeCount = () => {
     setCount(count + 1)

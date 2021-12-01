@@ -2,7 +2,7 @@ import React from "react";
 import CreateIcon from '@mui/icons-material/Create';
 import "./style.css";
 
-export const Header = React.memo(() => {
+export const Header = () => {
   console.log("header")
   return (
     <div className="header">
@@ -10,4 +10,4 @@ export const Header = React.memo(() => {
       <span className="header_title">React 勉強会</span>
     </div>
   );
-});
+};
