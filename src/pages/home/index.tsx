@@ -29,9 +29,9 @@ export const Home = () => {
     setIsModalOpen(true)
   };
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setIsModalOpen(false)
-  };
+  },[]);
 
   Modal.setAppElement("#root")
   return (
